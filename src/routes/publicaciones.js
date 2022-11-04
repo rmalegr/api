@@ -2,7 +2,7 @@ const {Router} = require("express");
 const router = Router();
 
 const publicaciones = require("../utils/propertiesRent.json");
-
+//rutas a publicaciones localhost:3001/publicaciones/1
 router.get("/publicaciones/:id", async (req, res) => {
 	let {id} = req.params;
 	id = parseInt(id);
